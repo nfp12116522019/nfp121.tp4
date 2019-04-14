@@ -1,8 +1,7 @@
-#! /bin/bash
 to="utf-8"
-f=$(file -i $1)
-from=${f#*charset=}
+x=$(file -i $1)
+from=${x#*charset=}
 if [[ $from != $to ]]; then
-    echo "iconv -f $from -t $to $1 -o $1"
-    iconv -f $from -t $to $1 -o $1
+    echo "iconv -f $from -t $to $f -o $f"
+	iconv -f $from -t $to $f -o $f
 fi
