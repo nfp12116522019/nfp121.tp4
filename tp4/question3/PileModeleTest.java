@@ -1,5 +1,6 @@
 package question3;
-
+import question3.tp3.Pile2;
+import java.util.*;
 /**
  * Classe-test PileModeleTest.
  * 
@@ -24,15 +25,8 @@ package question3;
  *          engagements, et suivi d'un appel à tearDown(), qui les détruit.
  */
 public class PileModeleTest extends junit.framework.TestCase {
-	// Définissez ici les variables d'instance nécessaires à vos engagements;
-	// Vous pouvez également les saisir automatiquement du présentoir
-	// à l'aide du menu contextuel "Présentoir --> Engagements".
-	// Notez cependant que ce dernier ne peut saisir les objets primitifs
-	// du présentoir (les objets sans constructeur, comme int, float, etc.).
-
-	/**
-	 * Constructeur de la classe-test PileModeleTest
-	 */
+	
+    
 	public PileModeleTest() {
 	}
 

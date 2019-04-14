@@ -21,11 +21,14 @@ public class PileModele<T> extends  java.util.Observable implements PileI<T> {
     }
 
     public T depiler() throws PileVideException {
-        return null;
+         T item = pile.depiler();
+        setChanged();
+        notifyObservers(item);
+        return item;
     }
 
     public T sommet() throws PileVideException {
-        return null;
+       return pile.sommet();
     }
 
     public int taille() {
